@@ -87,7 +87,7 @@
                </div>
                <div class="flx col-2 center v-center">
 
-                   <a href="{{ url('public/services') }}" class="button hero-button button-blue"><h1>JAVÍTÁS</h1></a>
+                   <a href="{{ url('services') }}" class="button hero-button button-blue"><h1>JAVÍTÁS</h1></a>
                </div>
             </div>
             <div class="header-right flx col-6 left column">

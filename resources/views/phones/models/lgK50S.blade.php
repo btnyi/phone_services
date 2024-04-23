@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechSpace</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Berkshire+Swash" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset("/build/assets/style2.css") }}">
-    <link rel="stylesheet" href="{{ asset("/build\assets\Huawei.css") }}">
-  
+    <link rel="stylesheet" href="{{ asset("build/assets/style2.css") }}">
+    <link rel="stylesheet" href="{{ asset("build\assets\services.css") }}">
 </head>
 
 <body>
@@ -68,9 +67,9 @@
         </nav>
         <nav class="navigation flex-grid spc-btwn" role="navigation">
             <div class="flx col-5 spc-arnd">
-                <a href="{{ url("dashboard") }}" class="nav-logo flx col-2 v-center"></a>
-                <a href="{{ url("dashboard") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Kezdőlap</h5></a>
-                <a href="{{ url("services") }}" class="flx col-4 center v-center"><h5 class="button services-button button-clear">Javítás</h5></a>
+                <a href="{{ url('dashboard') }}" class="nav-logo flx col-2 v-center"></a>
+                <a href="{{ url('dashboard') }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Kezdőlap</h5></a>
+                <a href="{{ url('services') }}" class="flx col-4 center v-center"><h5 class="button services-button button-clear">Javítás</h5></a>
             </div>
             <div id="contact" class="flx col-2 center">
                 <a href="{{ url("#") }}" class="flx col-10 center v-center"><h5 class="contact button button-blue">Kapcsolat</h5></a>
@@ -78,66 +77,159 @@
         </nav>
         <!--- HEADER -->
         <header class="header flex-grid center column" data-speed="10">
-            <div class="services-logo-type flx col-4 column">
-                <h1>TechSpace</h1>
-                <h2>OKOS ESZKÖZÖK JAVÍTÁSA</h2>
-                <img src="{{ asset("/images/img/scrolldown-icon.svg") }}" alt="Scroll Down Triangle">
+            <div class="logo flx col-4 column">
+                
+                <h1>LG K50S</h1>
+                <br>
+                <img src="{{ asset("/images/img/phone3.jpg") }}" alt="" style="border: 5px solid black; border-radius:40px">
             </div>
         </header>
 
         <main>
-            <section class="services hardware-services">
+        <section class="services hardware-services">
                 <div class="services-title h1-color">
-                    <h1>Modellek</h1>
-                    <h4>A legtöbb telefont rövid határidővel, akár 1-2 óra alatt megjavítjuk. A felsorolás nem tartalmaz minden típust, ha nem találod nyugodtan kérj árajánlatot telefonon, e-mail-ben, vagy a fenti űrlap segítségével.</h4>
+                    <h1>Alkatrészek amiket javítunk</h1>
+                    
                 </div>
+
                 <div class="services-grid">
                     <!-- ITEM ONE -->
                     <div class="service-item">
-                        <div>
-                            <img id="brand-image" src="{{ asset("/images/img/phone3.jpg") }}" alt="">
-                        </div>
-                        <div class="service-item-title">
-                            <a href="{{ url("/phones/models/huaweiP20") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Huawei P20</h5></a>
-                            <div class="selected"></div>
+                             <div class="item">
+                            <img src="{{ asset("/images/img/akkumulatorjavitas.jpg")}}" alt="" style="width:200px; height: 200px">
+                            </div>
+
+                        <div class="service-item-title" style="";>
+                            <h2>Akkumulátor javítás</h2>
                             
-                        </div>                   
+                        </div>
+                        <div class="service-item-description">
+                            <p>Javítási idő: 1 óra</p>
+                            <p>Ára: 19990 </p>
+                        </div>
                     </div>
 
                     <!-- ITEM TWO -->
                     <div class="service-item">
-                        <div>
-                            <img id="brand-image" src="{{ asset("/images/img/phone2.jpg") }}" alt="">
-                        </div>
+                    <div class="item">
+                            <img src="{{ asset("/images/img/kijelzojavitas.jpg")}}" alt="" style="width:200px; height: 200px">
+                            </div>
                         <div class="service-item-title">
-                            <a href="{{ url("/phones/models/huaweiP20pro") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Huawei P20 Pro</h5></a>
-                        </div>                   
+                            
+                            <h2>Kijelző javítás</h2>
+                        </div>
+                        <div class="service-item-description">
+                            <p>Javítási idő: 2 óra</p>
+                            <p>Ára: 24990 </p>
+                        </div>
                     </div>
+
                     <!-- ITEM THREE -->
                     <div class="service-item">
-                        <div>
-                            <img id="brand-image" src="{{ asset("/images/img/phone3.jpg") }}" alt="">
-                        </div>
+                    <div class="item">
+                            <img src="{{ asset("/images/img/toltocsatlakozojavitas.jpg")}}" alt="" style="width:200px; height: 200px">
+                            </div>
                         <div class="service-item-title">
-                            <a href="{{ url("/phones/models/huaweiMate10") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Huawei Mate 10</h5></a>
-                            <div class="selected"></div>
-                            
-                        </div>                   
+                           
+                        <h2>Töltőcsatlakozó javítás</h2>
+                        </div>
+                        <div class="service-item-description">
+                            <p>Javítási idő: 1 óra</p>
+                            <p>Ára: 19990 </p>
+                        </div>
                     </div>
 
                     <!-- ITEM FOUR -->
                     <div class="service-item">
-                        <div>
-                            <img id="brand-image" src="{{ asset("/images/img/phone2.jpg") }}" alt="">
-                        </div>
+                    <div class="item">
+                            <img src="{{ asset("/images/img/bekapcsologombjavitas.jpg")}}" alt="" style="width:200px; height: 200px">
+                            </div>
                         <div class="service-item-title">
-                            <a href="{{ url("/phones/models/huaweiMate10pro") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Huawei Mate 10 Pro</h5></a>
-                        </div>                   
+                      
+                        <h2>Bekapcsoló gomb javítás</h2>
+                        </div>
+                        <div class="service-item-description">
+                            <p>Javítási idő: 1 óra</p>
+                            <p>Ára: 14990 </p>
+                        </div>
                     </div>
-                
+
+                    <!-- ITEM FIVE -->
+                    <div class="service-item">
+                    <div class="item">
+                            <img src="{{ asset("/images/img/hangerogombjavitas.jpg")}}" alt="" style="width:200px; height: 200px">
+                            </div>
+                        <div class="service-item-title">
+                            
+                        <h2>Hangerő gomb javítás</h2>
+                        </div>
+                        <div class="service-item-description">
+                            <p>Javítási idő: 1 óra</p>
+                            <p>Ára: 14990 </p>
+                        </div>
+                    </div>
+
+                    <!-- ITEM SIX -->
+                    <div class="service-item">
+                    <div class="item">
+                            <img src="{{ asset("/images/img/hatlapikamerajavitas.jpg")}}" alt="" style="width:200px; height: 200px">
+                            </div>
+                        <div class="service-item-title">
+                            
+                        <h2>Hátlapi kamera javítás</h2>
+                        </div>
+                        <div class="service-item-description">
+                            <p>Javítási idő: 2 óra</p>
+                            <p>Ára: 10990 </p>
+                        </div>
+                    </div>   
+                   
+                    <!-- ITEM SEVEN -->
+                    <div class="service-item">
+                    <div class="item">
+                            <img src="{{ asset("/images/img/kameralencsejavitas.jpg")}}" alt="" style="width:200px; height: 200px">
+                            </div>
+                        <div class="service-item-title">
+                            
+                        <h2>Kamera lencse javítás</h2>
+                        </div>
+                        <div class="service-item-description">
+                            <p>Javítási idő: 1 óra</p>
+                            <p>Ára: 14990 </p>
+                        </div>
+                    </div>
+                    
+                    <!-- ITEM EIGHT -->
+                    <div class="service-item">
+                    <div class="item">
+                            <img src="{{ asset("/images/img/hanszorojavitas.jpg")}}" alt="" style="width:200px; height: 200px">
+                            </div>
+                        <div class="service-item-title">
+                            
+                        <h2>Hangszoró javítás</h2>
+                        </div>
+                        <div class="service-item-description">
+                            <p>Javítási idő: 2 óra</p>
+                            <p>Ára: 12990 </p>
+                        </div>
+                    </div>
+                    
+                    <!-- ITEM NINE -->
+                    <div class="service-item">
+                    <div class="item">
+                            <img src="{{ asset("/images/img/szoftveresjavitas.jpg")}}" alt="" style="width:200px; height: 200px">
+                            </div>
+                        <div class="service-item-title">
+                           
+                        <h2>Szoftveres javítás</h2>
+                        </div>
+                        <div class="service-item-description">
+                            <p>Javítási idő: 2 óra</p>
+                            <p>Ára: 5990 </p>
+                        </div>
+                    </div>
                 </div>
             </section>
-
 
             <section class="map flex-grid spc-arnd v-center">
                 <div class="map-card flx address col-4 column center">
@@ -158,6 +250,7 @@
                 </div>
             </section>
 
+
     
 
             <section class="services supported-devices">
@@ -166,6 +259,7 @@
                     <h1>eszközök</h1>
                     <h5>Más fajta mobileszköze van? Egyeztessen velünk és megpróbálunk megoldást találni a problémára.</h5>
                 </div>
+
                 <div class="flex-grid spc-arnd cellphone-providers">
                     <div class="flx col-2 cellphone-brand center">
                         <img src="{{ asset("/images/img/apple-iPhone-icon.svg") }}" alt="">
@@ -226,7 +320,7 @@
         <footer class="footer flex-grid center spc-arnd">
             <div class="footer-button-links flx col-3 column center">
                 <div class="footer-button button contact-footer button-blue"><h5>Kapcsolat</h5></div>
-                <div class="footer-button button contact-footer button-blue"><a href="{{ url("services") }}"><h5>Javítás</h5></a></div>
+                <div class="footer-button button contact-footer button-blue"><a href="{{ url('services') }}"><h5>Javítás</h5></a></div>
             </div>
             <div class="footer-logo flx col-3 center">
                 <img src="{{ asset("/images/img/logo2.png") }}" alt="footer-logo">

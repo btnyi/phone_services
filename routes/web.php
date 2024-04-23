@@ -46,6 +46,15 @@ Route::post('/submit-user-form', [UserContactController::class, 'store'])->name(
 Route::match(['get', 'head'], '/', function () {
     return view('welcome');
 });
+/*
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::head('/', function () {
+    return view('welcome');
+});*/
+
+
 //az aloldalak útvonalai:
 
 /*Route::match(['get', 'head'],'/phones/services', function () {
@@ -119,24 +128,112 @@ Route::match(['get', 'head'],'/phones/lg', function () {
     return view('phones.lg');
 });
 
+Route::match(['get', 'head'],'/phones/models/lgK50S', function () {
+    return view('phones/models/lgK50S');
+});
+
+Route::match(['get', 'head'],'/phones/models/lgG5', function () {
+    return view('phones/models/lgG5');
+});
+
+Route::match(['get', 'head'],'/phones/models/lgG6', function () {
+    return view('phones/models/lgG6');
+});
+
 Route::get('/phones/nokia', [NokiaController::class, 'index'])->name('nokia.index');
+
+Route::match(['get', 'head'],'/phones/models/nokia51Plus', function () {
+    return view('phones/models/nokia51Plus');
+});
+
+Route::match(['get', 'head'],'/phones/models/nokia61Plus', function () {
+    return view('phones/models/nokia61Plus');
+});
 
 Route::match(['get', 'head'],'/phones/oneplus', function () {
     return view('phones.oneplus');
 });
 
+Route::match(['get', 'head'],'/phones/models/OnePlus10T', function () {
+    return view('phones/models/OnePlus10T');
+});
+
+Route::match(['get', 'head'],'/phones/models/OnePlus10Pro', function () {
+    return view('phones/models/OnePlus10Pro');
+});
+
+Route::match(['get', 'head'],'/phones/models/OnePlus9', function () {
+    return view('phones/models/OnePlus9');
+});
+
 Route::get('/phones/pixel', [PixelController::class, 'index'])->name('pixel.index');
 
+Route::match(['get', 'head'],'/phones/models/pixel4A', function () {
+    return view('phones/models/pixel4A');
+});
+
+Route::match(['get', 'head'],'/phones/models/pixel4XL', function () {
+    return view('phones/models/pixel4XL');
+});
+
+Route::match(['get', 'head'],'/phones/models/pixel3A', function () {
+    return view('phones/models/pixel3A');
+});
+
+Route::match(['get', 'head'],'/phones/models/pixel3XL', function () {
+    return view('phones/models/pixel3XL');
+});
 
 Route::get('/phones/samsung', [SamsungController::class, 'index'])->name('samsung.index');
+
+Route::match(['get', 'head'],'/phones/models/samsungGalaxyS21Ultra', function () {
+    return view('phones/models/samsungGalaxyS21Ultra');
+});
+
+Route::match(['get', 'head'],'/phones/models/samsungGalaxyS21', function () {
+    return view('phones/models/samsungGalaxyS21');
+});
+
+Route::match(['get', 'head'],'/phones/models/samsungGalaxyA54', function () {
+    return view('phones/models/samsungGalaxyA54');
+});
+
+Route::match(['get', 'head'],'/phones/models/samsungGalaxyA34', function () {
+    return view('phones/models/samsungGalaxyA34');
+});
 
 Route::match(['get', 'head'],'/phones/sony', function () {
     return view('phones.sony');
 });
 
-Route::get('/phones/xiaomi', [XiaomiController::class, 'index'])->name('xiaomi.index');
-// routes/web.php
+Route::match(['get', 'head'],'/phones/models/sonyXperiaXA2', function () {
+    return view('phones/models/sonyXperiaXA2');
+});
 
+Route::match(['get', 'head'],'/phones/models/sonyXperiaZ1', function () {
+    return view('phones/models/sonyXperiaZ1');
+});
+
+Route::get('/phones/xiaomi', [XiaomiController::class, 'index'])->name('xiaomi.index');
+
+Route::match(['get', 'head'],'/phones/models/xiaomiRedmiNote9', function () {
+    return view('phones/models/xiaomiRedmiNote9');
+});
+
+Route::match(['get', 'head'],'/phones/models/xiaomiRedmiNote8', function () {
+    return view('phones/models/xiaomiRedmiNote8');
+});
+
+Route::match(['get', 'head'],'/phones/models/xiaomiMI10TPro', function () {
+    return view('phones/models/xiaomiMI10TPro');
+
+});
+
+Route::match(['get', 'head'],'/phones/models/xiaomiMI10T', function () {
+    return view('phones/models/xiaomiMI10T');
+});
+
+// routes/web.php
 Route::get('/phones', [PhoneController::class, 'index'])->name('phones.index');
 
 

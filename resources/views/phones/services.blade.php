@@ -69,7 +69,7 @@
             <div class="flx col-5 spc-arnd">
                 <a href="{{ url('dashboard') }}" class="nav-logo flx col-2 v-center"></a>
                 <a href="{{ url('dashboard') }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Kezdőlap</h5></a>
-                <a href="{{ url('phones/services') }}" class="flx col-4 center v-center"><h5 class="button services-button button-clear">Javítás</h5></a>
+                <a href="{{ url('services') }}" class="flx col-4 center v-center"><h5 class="button services-button button-clear">Javítás</h5></a>
             </div>
             <div id="contact" class="flx col-2 center">
                 <a href="{{ url("#") }}" class="flx col-10 center v-center"><h5 class="contact button button-blue">Kapcsolat</h5></a>
@@ -88,7 +88,7 @@
             <section class="services hardware-services">
                 <div class="services-title h1-color">
                     <h1>Márkák amiket javítunk</h1>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eaque vitae alias eos quia porro est voluptatequasi, molestiae veritatis debitis nostrum sequi reprehenderit ipsum eum, deserunt, eligendi fuga. </h4>
+                    <h4>Szervizünkben profi szakemberek várnak rád, akik gyorsan és hatékonyan megoldják telefonod problémáját. Legyen szó kijelző cseréről, akkumulátor cseréről, vagy alaplapi  javításról. Ráadásul, ha hozzánk fordulsz, nem kell aggódnod a minőség miatt, hiszen csak eredeti vagy azzal egyenértékű alkatrészekkel dolgozunk. </h4>
                 </div>
 
                 
@@ -206,7 +206,7 @@
         <footer class="footer flex-grid center spc-arnd">
             <div class="footer-button-links flx col-3 column center">
                 <div class="footer-button button contact-footer button-blue"><h5>Kapcsolat</h5></div>
-                <div class="footer-button button contact-footer button-blue"><a href="{{ url('phones/services') }}"><h5>Javítás</h5></a></div>
+                <div class="footer-button button contact-footer button-blue"><a href="{{ url('services') }}"><h5>Javítás</h5></a></div>
             </div>
             <div class="footer-logo flx col-3 center">
                 <img src="{{ asset("/images/img/logo2.png") }}" alt="footer-logo">

@@ -69,7 +69,7 @@
             <div class="flx col-5 spc-arnd">
                 <a href="{{ url("dashboard") }}" class="nav-logo flx col-2 v-center"></a>
                 <a href="{{ url("dashboard") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Kezdőlap</h5></a>
-                <a href="{{ url("phones/services") }}" class="flx col-4 center v-center"><h5 class="button services-button button-clear">Javítás</h5></a>
+                <a href="{{ url("services") }}" class="flx col-4 center v-center"><h5 class="button services-button button-clear">Javítás</h5></a>
             </div>
             <div id="contact" class="flx col-2 center">
                 <a href="{{ url("#") }}" class="flx col-10 center v-center"><h5 class="contact button button-blue">Kapcsolat</h5></a>
@@ -88,7 +88,7 @@
             <section class="services hardware-services">
                 <div class="services-title h1-color">
                     <h1>Modellek</h1>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt consequuntur eaque vitae alias eos quia porro est voluptatequasi, molestiae veritatis debitis nostrum sequi reprehenderit ipsum eum, deserunt, eligendi fuga. </h4>
+                    <h4>A legtöbb telefont rövid határidővel, akár 1-2 óra alatt megjavítjuk. A felsorolás nem tartalmaz minden típust, ha nem találod nyugodtan kérj árajánlatot telefonon, e-mail-ben, vagy a fenti űrlap segítségével.</h4>
                 </div>
                 <div class="services-grid">
                     <!-- ITEM ONE -->
@@ -97,7 +97,7 @@
                             <img id="brand-image" src="{{ asset("/images/img/phone3.jpg") }}" alt="">
                         </div>
                         <div class="service-item-title">     
-                            <a href="{{ url("Apple.html") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Xiaomi Redmi Note 9</h5></a>                    
+                            <a href="{{ url("/phones/models/xiaomiRedmiNote9") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Xiaomi Redmi Note 9</h5></a>                    
                             <div class="selected"></div>                        
                         </div>                   
                     </div>
@@ -108,7 +108,7 @@
                             <img id="brand-image" src="{{ asset("/images/img/phone2.jpg") }}" alt="">
                         </div>
                         <div class="service-item-title">
-                            <a href="{{ url("Apple.html") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Xiaomi Redmi Note 8</h5></a>
+                            <a href="{{ url("/phones/models/xiaomiRedmiNote8") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Xiaomi Redmi Note 8</h5></a>
                         </div>                   
                     </div>
                     <!-- ITEM THREE -->
@@ -117,7 +117,7 @@
                             <img id="brand-image" src="{{ asset("/images/img/phone3.jpg") }}" alt="">
                         </div>
                         <div class="service-item-title">
-                            <a href="{{ url("Apple.html") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Xiaomi MI 10T</h5></a>
+                            <a href="{{ url("/phones/models/xiaomiMI10T") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Xiaomi MI 10T</h5></a>
                             <div class="selected"></div>
                             
                         </div>                   
@@ -129,7 +129,7 @@
                             <img id="brand-image" src="{{ asset("/images/img/phone2.jpg") }}" alt="">
                         </div>
                         <div class="service-item-title">
-                            <a href="{{ url("Apple.html") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Xiaomi MI 10T Pro</h5></a>
+                            <a href="{{ url("/phones/models/xiaomiMI10TPro") }}" class="flx col-4 center v-center"><h5 class="button home-button button-clear">Xiaomi MI 10T Pro</h5></a>
                         </div>                   
                     </div>
                 
@@ -225,7 +225,7 @@
         <footer class="footer flex-grid center spc-arnd">
             <div class="footer-button-links flx col-3 column center">
                 <div class="footer-button button contact-footer button-blue"><h5>Kapcsolat</h5></div>
-                <div class="footer-button button contact-footer button-blue"><a href="{{ url("phones/services") }}"><h5>Javítás</h5></a></div>
+                <div class="footer-button button contact-footer button-blue"><a href="{{ url("services") }}"><h5>Javítás</h5></a></div>
             </div>
             <div class="footer-logo flx col-3 center">
                 <img src="{{ asset("/images/img/logo2.png") }}" alt="footer-logo">
